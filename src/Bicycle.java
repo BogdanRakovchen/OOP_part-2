@@ -1,7 +1,6 @@
 class Bicycle extends Transport implements ServiceInterface{
 
-    private String modelName;
-    private int wheelsCount;
+
     public Bicycle(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
         this.modelName = modelName;
@@ -18,19 +17,12 @@ class Bicycle extends Transport implements ServiceInterface{
 
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку велосипеда");
     }
 
 
 
-    public String getModelName() {
-        return modelName;
-    }
 
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
 
 
 }

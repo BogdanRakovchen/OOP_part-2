@@ -1,7 +1,6 @@
 class Truck extends Transport implements ServiceInterface {
 
-    private String modelName;
-    private int wheelsCount;
+
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
         this.modelName = modelName;
@@ -9,15 +8,15 @@ class Truck extends Transport implements ServiceInterface {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку грузовка");
     }
 
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем двигатель грузовика");
     }
 
     public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
+        System.out.println("Проверяем прицеп грузовика");
     }
 
     @Override
@@ -31,13 +30,6 @@ class Truck extends Transport implements ServiceInterface {
 
         }
 
-    public String getModelName() {
-        return modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
 
 
 }

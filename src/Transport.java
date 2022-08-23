@@ -7,4 +7,13 @@ public abstract class Transport {
         this.wheelsCount = wheelsCount;
     }
 
+    public String getModelName() {
+        return modelName;
+    }
+
+
+    public int getWheelsCount() {
+        return wheelsCount;
+    }
+
 }

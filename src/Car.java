@@ -1,8 +1,7 @@
 // наследование
 public class Car extends Transport implements ServiceInterface {
 
-    private String modelName;
-    private int wheelsCount;
+
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
         this.modelName = modelName;
@@ -22,21 +21,14 @@ public class Car extends Transport implements ServiceInterface {
 
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку машины");
     }
 
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    public String getModelName() {
-        return modelName;
+        System.out.println("Проверяем двигатель машины");
     }
 
 
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
 
 
 }
