@@ -1,6 +1,10 @@
 public abstract class Transport {
-    abstract void checkCar(Car car);
-    abstract void checkBicycle(Bicycle bicycle);
-    abstract void checkTruck(Truck truck);
+    public String modelName;
+    public int wheelsCount;
+
+    public Transport(String modelName, int wheelsCount) {
+        this.modelName = modelName;
+        this.wheelsCount = wheelsCount;
+    }
 
 }
