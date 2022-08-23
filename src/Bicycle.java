@@ -1,5 +1,7 @@
 class Bicycle extends Transport implements ServiceInterface{
 
+    private String modelName;
+    private int wheelsCount;
     public Bicycle(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
         this.modelName = modelName;
